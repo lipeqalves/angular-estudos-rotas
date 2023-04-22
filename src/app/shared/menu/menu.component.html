@@ -1,10 +1,22 @@
 <div>
   <ul>
     <li>
-      <a [routerLink]="['/']">HOME</a>
+      <a
+        [routerLink]="['/']"
+        [routerLinkActive]="['activated']"
+        [routerLinkActiveOptions]="{ exact: true }"
+        >HOME</a
+      >
     </li>
     <li>
-      <a [routerLink]="['/portfolio']">PORTFOLIO</a>
+      <a
+        [routerLink]="['/portfolio']"
+        [routerLinkActive]="['activated']"
+        [routerLinkActiveOptions]="{ exact: true }"
+        >PORTFOLIO</a
+      >
     </li>
   </ul>
 </div>
+<!-- routerLinkActive usado para colocar uma class css, para estilização da rota ativa
+routerLinkActiveOptions, para utilizar o css somente na rota que esta sendo selecionada  -->
